@@ -1,0 +1,118 @@
+/* nunito 800, 400, 600, */
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/nunito-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/nunito-semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/nunito-extrabold.woff2') format('woff2');
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Nunito'; */
+  font-weight: 400;
+  background-color: #F9F9F9;
+}
+
+.container {
+  max-width: 1250px;
+  width: 100%;
+  padding-inline: 10px;
+
+}
+a {
+  text-decoration-line: none;
+}
+.site-header {
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50%) calc(50% - 75px);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.header-info {
+  color: #FF5C00;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.header-desc {
+  font-size: 12px;
+  margin-bottom: 19px;
+}
+
+.header-price {
+  font-weight: 600;
+}
+
+.hero-list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.hero-item {
+  width: 97px;
+  border-radius: 50px;
+  background-color: #fff;
+/* background: #FFAB08; */
+}
+.hero-link {
+  font-size: 12px;
+}
+.hero-item:first-child::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-image: url("./images/burger-icon.png");
+  background-repeat: no-repeat;
+}
+.hero-item:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-image: url("./images/additions.png");
+  background-repeat: no-repeat;
+}
+.hero-item:nth-child(3)::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-image: url("./images/hot-dogs-icon.png");
+  background-repeat: no-repeat;
+}
